@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Name</title>
+    </head>
+    <body>
+        <div class="MainPage" id="MainPage">
+            <div class="img">
+                <img
+                    src="/img/james-mcdonald-3d4sSUChunA-unsplash.jpg"
+                    alt="Name"
+                    class="image" />
+            </div>
+            <div class="content">
+                <div class="title">
+                    <!-- titre -->
+                    <h1 class="Title" id="Title">bureau d'étude</h1>
+                </div>
+                <div class="ct">
+                    <div class="priceSector">
+                        <h2 class="price">Price :</h2>
+                        <!-- el prix -->
+                        <h2 id="price">1000 DA</h2>
+                    </div>
+                    <div class="Discription">
+                        <!-- el info ta3o -->
+                        <h3>
+                            discription simple (Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Laboriosam porro
+                            assumenda laudantium praesentium dolorem delectus ex
+                            similique amet quae et? Deserunt mollitia voluptatum
+                            quasi perspiciatis totam! Tenetur eum veniam vitae.)
+                        </h3>
+                    </div>
+                    <div class="order">
+                        <button id="btn-order">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orderPage" id="orderPage">
+            <div class="holder">
+                <div class="finalHolder">
+                    <form id="myForm">
+                        <h3>Full Name</h3>
+                        <input
+                            type="text"
+                            id="Name"
+                            placeholder="Your Name "
+                            class="input"
+                            minlength="2"
+                            required />
+
+                        <h3>Email</h3>
+                        <input
+                            type="email"
+                            id="Email"
+                            placeholder="Your Email "
+                            class="input"
+                            minlength="4"
+                            required />
+
+                        <h3>Phone Number</h3>
+                        <input
+                            type="tel"
+                            id="P-number"
+                            class="input"
+                            placeholder="Your Phone Number"
+                            pattern="[0-9]{10}"
+                            required />
+
+                        <div class="selc">
+                            <h3>Enter Quantity</h3>
+
+                            <select
+                                name="count"
+                                id="count"
+                                title="Select count
+                        ">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="colors">
+                            <input
+                                name="colors"
+                                type="radio"
+                                class="color"
+                                id="Black"
+                                value="black"
+                                placeholder="black" />
+                            <input
+                                name="colors"
+                                type="radio"
+                                class="color"
+                                id="White"
+                                value="white"
+                                placeholder="White" />
+                        </div>
+
+                        <div class="orderbtn">
+                            <button id="btn-order2" type="submit">Order</button>
+                            <button id="back_1" type="button">Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init('L1SGz6CRiBIdULOUB');
+            })();
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>

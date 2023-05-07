@@ -1,0 +1,250 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #272626;
+    height: 100%;
+}
+.orderPage {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: #171717;
+    justify-content: center;
+    align-items: center;
+}
+.MainPage {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 15px solid #272626;
+}
+.image {
+    height: 100%;
+    width: 500px;
+}
+.content {
+    height: 100%;
+    background-color: #171717;
+    color: white;
+}
+.ct {
+    padding: 50px;
+}
+.order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+button {
+    height: 50px;
+    width: 100px;
+
+    margin-left: 5px;
+
+    border: none;
+    background-color: royalblue;
+    color: white;
+
+    transition: ease-in 0.3s;
+}
+button:hover {
+    border: none;
+    background-color: orangered;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.title {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-bottom: 15px solid #272626;
+}
+h1 {
+    font-size: 75px;
+}
+.priceSector {
+    display: flex;
+}
+
+.holder {
+    background-color: #61babe;
+    height: 500px;
+    width: 500px;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 1px 2px #61babe;
+    transition: ease-in-out 0.5s;
+}
+.holder:hover {
+    box-shadow: 0px 1px 20px #61babe;
+}
+.input {
+    height: 34px;
+    width: 200px;
+
+    border-radius: 15px;
+    border: #61babe solid 1px;
+
+    background-color: #171717;
+    color: white;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input:focus {
+    box-shadow: 0px 1px 20px #171717;
+}
+.selc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select {
+    padding-left: 10px;
+    margin-left: 10px;
+
+    background-color: #171717;
+    color: white;
+
+    border-radius: 5px;
+}
+.colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+#Black[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#Black[type='radio']:checked {
+    border: royalblue solid 10px;
+}
+#White[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#White[type='radio']:checked {
+    border: royalblue solid 10px;
+}
+.orderbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styles for screens with a maximum width of 600px (typical mobile device width) */
+@media only screen and (max-width: 900px) {
+    .image {
+        height: 100%;
+        width: 100%;
+    }
+    .ct {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .input {
+        height: 28px;
+        width: 150px;
+        font-size: 14px;
+    }
+    select {
+        font-size: 14px;
+    }
+    .colors {
+        margin: 10px;
+    }
+    #Black[type='radio'],
+    #White[type='radio'] {
+        width: 30px;
+        height: 30px;
+    }
+    .orderPage {
+        background-color: #171717;
+    }
+    .MainPage {
+        flex-direction: column;
+    }
+    .img {
+        border-right: none;
+        border-bottom: 15px solid #272626;
+    }
+    .title {
+        height: 20%;
+        font-size: 40px;
+    }
+    .priceSector {
+        flex-direction: flex;
+    }
+    .holder {
+        height: 300px;
+        width: 300px;
+        border-radius: 15px;
+    }
+    .orderbtn {
+        flex-direction: column;
+    }
+    button {
+        height: 40px;
+        width: 80px;
+        font-size: 14px;
+        margin-left: 2px;
+    }
+    .holder {
+        background-color: #61babe;
+        height: 525px;
+        width: 350px;
+        border-radius: 25px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-shadow: 0px 1px 2px #61babe;
+        transition: ease-in-out 0.5s;
+    }
+}
